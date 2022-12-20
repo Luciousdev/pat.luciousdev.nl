@@ -14,7 +14,7 @@ Website to give me pats :D
 
 ## Demo
 
-Click [here](https://www.pat.luciousdev.nl) for the website/demo
+Click [here](https://pat.luciousdev.nl) for the website/demo
 
 ![Website](https://img.shields.io/website?down_color=red&down_message=oh%20no%20%3A%28&up_color=green&up_message=online&url=https%3A%2F%2Fluciousdev.nl)
 ## Badges
