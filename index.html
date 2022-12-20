@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pat the Lucy!</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./script.js" defer></script>
+    <script defer id="__bs_script__">
+        //<![CDATA[
+        let script = document.createElement('script');
+        script.setAttribute('async', '');
+        script.setAttribute('src', '%script%'.replace("HOST", location.hostname));
+        document.body.appendChild(script);
+        //]]>
+    </script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="logger();">
+    <div onload="sessionSetZero();" class="center">
+        <img id="clicker" class="pat-image" src="./assets/images/pet.jpg" onmouseover="startAnimation()" onmouseout="stopAnimation()">
+        <div class="test">
+            <p>Click the image to pat Lucy!</p>
+            <p>All global pats:<span id="displayElement"></span></p>
+            <br>
+            <p>Session pats: <span id="totalSession"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
