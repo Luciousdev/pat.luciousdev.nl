@@ -1,3 +1,4 @@
+// Mark git directories as safe: git config --global --add safe.directory '*'
 // Logs the loading of the webpage with the time.
 
 function logger() {
@@ -80,6 +81,7 @@ function updateClickCount() {
 }
 setInterval(updateClickCount, 10000);
 updateClickCount();
+
 
 
 // Achievements
