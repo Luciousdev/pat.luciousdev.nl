@@ -26,14 +26,14 @@ function achievements() {
         case score == 2000 && !climbingUnlocked:
             alert("Achievement unlocked!\n\nYou're climbing the leaderboards!");
             climbingUnlocked = true;
-            document.getElementById("zilver").style.visibility = "visible";
+            document.getElementById("silver").style.visibility = "visible";
             break;
         case score == 5000 && !gold:
             alert("Achievement unlocked!\n\nGood job!");
             gold = true;
             document.getElementById("gold").style.visibility = "visible";
             break;
-        case score == 5000 && !platinum:
+        case score == 15000 && !platinum:
             alert("Achievement unlocked!\n\nGood job!");
             platinum = true;
             document.getElementById("platinum").style.visibility = "visible";
