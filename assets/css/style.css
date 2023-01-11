@@ -52,6 +52,19 @@
 }
 
 
+/* multiplier */
+
+.letter-div {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* font-size: 20px; */
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+
 /* 
 
 
