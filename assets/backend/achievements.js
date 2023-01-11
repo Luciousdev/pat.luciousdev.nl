@@ -10,7 +10,7 @@ let niceUnlocked = false;
 let top1Unlocked = false;
 
 function achievements() {
-    score = sessionStorage.getItem("session");
+    score = localStorage.getItem("localPats");
 
     switch (true) {
         case score == 100 && !newbieUnlocked:
