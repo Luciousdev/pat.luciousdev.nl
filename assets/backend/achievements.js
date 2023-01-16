@@ -44,7 +44,7 @@ function achievements() {
             break;
         case score >= 120000 && !diamondUnlocked:
             alert("Achievement unlocked!\n\nCongrats, you're almost max rank!");
-            localStorage.setItem("diamonUnlocked", "true");
+            localStorage.setItem("diamondUnlocked", "true");
             document.getElementById("diamond").style.visibility = "visible";
             break;
         case score >= 1000000 && !top1Unlocked:
