@@ -12,12 +12,12 @@ function achievements() {
     let top1Unlocked = localStorage.getItem("top1Unlocked") === "true";
 
     switch (true) {
-        case score >= 10 && !newbieUnlocked:
+        case score >= 100 && !newbieUnlocked:
             alert("Achievement unlocked!\n\nNewbie");
             localStorage.setItem("newbieUnlocked", "true");
             document.getElementById("copper").style.visibility = "visible";
             break;
-        case score >= 50 && !gettingThereUnlocked:
+        case score >= 500 && !gettingThereUnlocked:
             alert("Achievement unlocked!\n\nYou're getting there!");
             localStorage.setItem("gettingThereUnlocked", "true");
             document.getElementById("bronze").style.visibility = "visible";
