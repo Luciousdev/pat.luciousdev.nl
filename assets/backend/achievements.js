@@ -7,6 +7,7 @@ let climbingUnlocked = false;
 let gold = false;
 let platinum = false;
 let niceUnlocked = false;
+let diamondUnlocked = false;
 let top1Unlocked = false;
 
 function achievements() {
@@ -43,9 +44,14 @@ function achievements() {
             document.getElementById("emerald").style.visibility = "visible";
             niceUnlocked = true;
             break;
+        case score >= 120000 && !top1Unlocked:
+            alert("Achievement unlocked!\n\nCongrats, you're almost max rank!");
+            document.getElementById("diamond").style.visibility = "visible";
+            diamondUnlocked = true;
+            break;
         case score >= 1000000 && !top1Unlocked:
             alert("Achievement unlocked!\n\nYou're in the top 1% (I think)!");
-            document.getElementById("diamond").style.visibility = "visible";
+            document.getElementById("champion").style.visibility = "visible";
             top1Unlocked = true;
             break;
     }
