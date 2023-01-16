@@ -24,33 +24,40 @@
 </head>
 
 <body onload="logger();">
-    <div class="achievement-box">
-        <h3>Unlocked Achievements:</h3>
-        <img id="copper" src="./assets/images/copper.webp" alt="Copper" title="Copper (unlocked at 100 pats)">
-        <img id="bronze" src="./assets/images/bronze.webp" alt="Bronze" title="Bronze (unlocked at 500 pats)">
-        <img id="silver" src="./assets/images/silver.webp" alt="Silver" title="Silver (unlocked at 2000 pats)">
-        <img id="gold" src="./assets/images/gold.webp" alt="Gold" title="Gold (unlocked at 5000 pats)">
-        <img id="platinum" src="./assets/images/platinum.webp" alt="Platinum" title="Platinum (unlocked at 15000 pats)">
-        <img id="emerald" src="./assets/images/emerald.webp" alt="Emerald" title="Emerald (unlocked at 69420 pats)">
-        <img id="diamond" src="./assets/images/diamond.webp" alt="Diamond" title="(unlocked at 1000000 pats)">
-        <img id="champion" src="./assets/images/champion.png" alt="Champion" title="(unlocked at 1000000 pats)">
-    </div>
-    <!-- TODO login/signup page-->
-    <!-- Login/Signup link -->
-    <!-- <a href="#" data-toggle="modal" data-target="#loginModal">Login/Signup</a> -->
+    <!-- Achievement box -->
+    <section>
+        <div class="achievement-box">
+            <h3>Unlocked Achievements:</h3>
+            <img id="copper" src="./assets/images/copper.webp" alt="Copper" title="Copper (unlocked at 100 pats)">
+            <img id="bronze" src="./assets/images/bronze.webp" alt="Bronze" title="Bronze (unlocked at 500 pats)">
+            <img id="silver" src="./assets/images/silver.webp" alt="Silver" title="Silver (unlocked at 2000 pats)">
+            <img id="gold" src="./assets/images/gold.webp" alt="Gold" title="Gold (unlocked at 5000 pats)">
+            <img id="platinum" src="./assets/images/platinum.webp" alt="Platinum" title="Platinum (unlocked at 15000 pats)">
+            <img id="emerald" src="./assets/images/emerald.webp" alt="Emerald" title="Emerald (unlocked at 69420 pats)">
+            <img id="diamond" src="./assets/images/diamond.webp" alt="Diamond" title="(unlocked at 120000 pats)">
+            <img id="champion" src="./assets/images/champion.png" alt="Champion" title="(unlocked at 1000000 pats)">
+        </div>
+    </section>
 
-    <!-- Login/Signup modal -->
-    <!-- <div class="modal" id="loginModal">
+
+    <!-- todo -->
+    <section>
+        <!-- TODO login/signup page-->
+        <!-- Login/Signup link -->
+        <!-- <a href="#" data-toggle="modal" data-target="#loginModal">Login/Signup</a> -->
+
+        <!-- Login/Signup modal -->
+        <!-- <div class="modal" id="loginModal">
         <div class="modal-content"> -->
-    <!-- Login form -->
-    <!-- <form action="login.php" method="post">
+        <!-- Login form -->
+        <!-- <form action="login.php" method="post">
                 <input type="text" name="username" placeholder="Username">
                 <input type="password" name="password" placeholder="Password">
                 <button type="submit" name="login_btn">Login</button>
             </form> -->
 
-    <!-- Signup form -->
-    <!-- <form action="signup.php" method="post">
+        <!-- Signup form -->
+        <!-- <form action="signup.php" method="post">
                 <input type="text" name="username" placeholder="Username">
                 <input type="email" name="email" placeholder="Email">
                 <input type="password" name="password" placeholder="Password">
@@ -58,21 +65,29 @@
             </form>
         </div>
     </div> -->
+    </section>
 
-    <div onload="sessionSetZero();" class="center">
-        <img id="clicker" class="pat-image" src="./assets/images/pet.jpg" onmouseover="startAnimation()" onmouseout="stopAnimation()">
-        <div class="test">
-            <p>Click the image to pat Lucy!</p>
-            <p>All global pats: <span id="displayElement"></span></p>
-            <br>
-            <p>Your total pats: <span id="totalPats"></span></p>
-            <br>
-            <p>Session pats: <span id="totalSession"></span></p>
-            <br>
-            <!-- <span id="clickMultiplier"></span> -->
+    <!-- stats/image section -->
+    <section>
+        <div onload="sessionSetZero();" class="center">
+            <img id="clicker" class="pat-image" src="./assets/images/pet.jpg" onmouseover="startAnimation()" onmouseout="stopAnimation()">
+            <div class="test">
+                <p>Click the image to pat Lucy!</p>
+                <p>All global pats: <span id="displayElement"></span></p>
+                <br>
+                <p>Your total pats: <span id="totalPats"></span></p>
+                <br>
+                <p>Session pats: <span id="totalSession"></span></p>
+                <br>
+                <!-- <span id="clickMultiplier"></span> -->
+            </div>
         </div>
-    </div>
-    <div class="letter-div">Multiplier: <span id="clickMultiplier"></span>x</div>
+    </section>
+
+    <!-- Multiplier section -->
+    <section>
+        <div class="letter-div">Multiplier: <span id="clickMultiplier"></span>x</div>
+    </section>
 </body>
 
 </html>
